@@ -49,7 +49,7 @@ def snkcheck():
                 server.starttls()
                 server.ehlo()
 
-                server.login('brandon.gamiz.tinoco@gmail.com', 'California15*')
+                server.login('correo', 'contraseña')
 
                 subject = 'INNVICTUS | Ya hay stock!'
                 body = 'Ya hay stock de un par, ve y revisa el precio! Entra al link a comprar ' + URL2[c]
@@ -89,7 +89,7 @@ def snkcheck2():
             server.starttls()
             server.ehlo()
 
-            server.login('brandon.gamiz.tinoco@gmail.com', 'California15*')
+            server.login('correo', 'contraseña')
 
             subject = 'INNVICTUS | El estado de la página cambió!'
             body = 'El estado de la página ya cambió, ve a revisar si todavía hay!' + URL3[c]
@@ -97,8 +97,8 @@ def snkcheck2():
             msg = f"Subject: {subject}\n\n{body}"
 
             server.sendmail(
-                'brandon.gamiz.tinoco@gmail.com',
-                'brandonb.gt@outlook.com',
+                'correo',
+                'correo',
                 msg
             )
             print("HEY YA SE ENVIO EL CORREO")

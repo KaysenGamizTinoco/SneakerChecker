@@ -57,8 +57,8 @@ def snkcheck():
                 msg = f"Subject: {subject}\n\n{body}"
 
                 server.sendmail(
-                    'brandon.gamiz.tinoco@gmail.com',
-                    'brandonb.gt@outlook.com',
+                    'correo@correo.com',
+                    'correo@correo.com',
                     msg
                 )
                 print("HEY YA SE ENVIO EL CORREO")
@@ -97,8 +97,8 @@ def snkcheck2():
             msg = f"Subject: {subject}\n\n{body}"
 
             server.sendmail(
-                'correo',
-                'correo',
+                'correo@correo.com',
+                'correo@correo.com',
                 msg
             )
             print("HEY YA SE ENVIO EL CORREO")
